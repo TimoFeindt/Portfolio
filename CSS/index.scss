@@ -1,0 +1,24 @@
+
+#grid--container {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". . nav . ."
+  ". . . . ."
+  ;
+}
+
+#navbar--container {
+  grid-area: nav;
+  display: flex;
+
+    li {
+      list-style-type: none;
+    }
+}
+
+.navbar--container--mobil {
+  display: none;
+}
+

@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: ". img ." "txt txt txt" "life life life";
+  grid-template-areas: ". img ." "txt txt txt" "life life life" ". . ." "code code code" "design design design";
 }
 
 .img--container {
@@ -79,11 +79,39 @@
 
 .event--container {
   margin: 0.5rem;
-  border: 2px solid #91E3E6;
+  border: 2px dashed palevioletred;
   border-radius: 5px;
   background-color: #f4f4f4;
+  background-clip: content-box;
 }
 
+.border {
+  position: relative;
+}
+.border::before {
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  content: "";
+  width: 15%;
+  height: 20px;
+  background-color: chartreuse;
+}
+.border::after {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+@keyframes spinBorder {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 .event--box {
   padding: 0.5rem;
 }
@@ -126,6 +154,29 @@
   top: -16px;
   left: calc(50% - 12px);
   transform: rotate(90deg);
+}
+
+.codeSkillset--container {
+  grid-area: code;
+}
+
+.designSkillset--container {
+  grid-area: design;
+}
+
+.skill--area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: beige;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.skill--box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

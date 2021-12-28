@@ -2,8 +2,6 @@ $primary--light--blue: #91e3e6;
 $primary--blue: #62999b;
 $primary--dark--blue: #375456;
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +90,7 @@ $primary--dark--blue: #375456;
 
 .timeline {
   grid-area: thread;
-  background-color: $bright--blue;
+  background-color: $primary--light--blue;
   position: relative;
   width: 2px;
 
@@ -103,7 +101,7 @@ $primary--dark--blue: #375456;
       left: -10px;
       height: 20px;
       width: 20px;
-      border: 2px dashed $bright--blue;
+      border: 2px dashed $primary--light--blue;
       border-radius: 50%;
     }
 }

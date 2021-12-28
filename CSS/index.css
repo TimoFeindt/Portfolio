@@ -1,17 +1,182 @@
-/* Error: Undefined variable.
- *    ,
- * 95 |   background-color: $bright--blue;
- *    |                     ^^^^^^^^^^^^^
- *    '
- *   index.scss 95:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 95 \2502    background-color: $bright--blue;\d\a    \2502                      ^^^^^^^^^^^^^\a    \2575 \a   index.scss 95:21  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+#grid--container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". . nav . ." ". . . . ." ". main main main ." ". footer footer footer .";
+  background: url("../images/background.svg") center;
+  height: 100vh;
+}
+
+.navbar--container {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  background-color: yellowgreen;
+  width: 100%;
+}
+.navbar--container li {
+  list-style-type: none;
+}
+.navbar--container li a {
+  padding: 0.3rem;
+}
+
+.navbar--container--mobil {
+  display: none;
+}
+
+.main--container {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". img ." "txt txt txt" "life life life" ". . ." "code code code" "design design design";
+}
+
+.img--container {
+  grid-area: img;
+  background-color: red;
+  width: 100%;
+}
+
+.text--box {
+  grid-area: txt;
+  background-color: aquamarine;
+}
+
+#lifeline--container {
+  grid-area: life;
+  position: relative;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 0.01fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: " . thread . " "event thread ." ". thread event2 " "event3 thread ." ". thread event4 " "event5 thread . " ". thread event6 " "event7 thread . " ". thread event8 ";
+}
+
+.timeline {
+  grid-area: thread;
+  background-color: #91e3e6;
+  position: relative;
+  width: 2px;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: -10px;
+  height: 20px;
+  width: 20px;
+  border: 2px dashed #91e3e6;
+  border-radius: 50%;
+}
+
+.event--container {
+  margin: 0.5rem;
+  border: 2px dashed palevioletred;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  background-clip: content-box;
+}
+
+.border {
+  position: relative;
+}
+.border::before {
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  content: "";
+  width: 15%;
+  height: 20px;
+  background-color: chartreuse;
+}
+.border::after {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+@keyframes spinBorder {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.event--box {
+  padding: 0.5rem;
+}
+
+.event--container.one {
+  grid-area: event;
+}
+
+.event--container.two {
+  grid-area: event2;
+}
+
+.event--container.three {
+  grid-area: event3;
+}
+
+.event--container.four {
+  grid-area: event4;
+}
+
+.event--container.five {
+  grid-area: event5;
+}
+
+.event--container.six {
+  grid-area: event6;
+}
+
+.event--container.seven {
+  grid-area: event7;
+}
+
+.event--container.eight {
+  grid-area: event8;
+}
+
+.fa-shuttle-space {
+  color: #ee4848;
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 12px);
+  transform: rotate(90deg);
+}
+
+.codeSkillset--container {
+  grid-area: code;
+}
+
+.designSkillset--container {
+  grid-area: design;
+}
+
+.skill--area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: beige;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.skill--box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */

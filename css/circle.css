@@ -1,0 +1,123 @@
+.skill--circle {
+  position: relative;
+}
+
+.outer--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px -1px #141b29, -2px -2px 10px -1px #141b29;
+}
+
+.inner--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px -1px #c0f7b7, inset -2px -2px 4px -1px #141b29, -1px -1px 0px #c0f7b7, 1px 1px 0px #141b29;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(275deg);
+}
+svg circle {
+  fill: none;
+  stroke: url(#paint0_linear_1_4);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  stroke-linecap: round;
+}
+
+/*************/
+/* 80 circle */
+/*************/
+#html svg circle,
+#css svg circle {
+  animation: fill80 2s linear forwards;
+}
+
+/*************/
+/* 70 circle */
+/*************/
+#ps svg circle {
+  animation: fill70 2s linear forwards;
+}
+
+/*************/
+/* 60 circle */
+/*************/
+#ind svg circle {
+  animation: fill60 2s linear forwards;
+}
+
+/*************/
+/* 50 circle */
+/*************/
+#js svg circle,
+#figma svg circle {
+  animation: fill50 2s linear forwards;
+}
+
+/***************/
+/* 40 circle */
+/***************/
+#react svg circle,
+#sql svg circle,
+#ai svg circle {
+  animation: fill40 2s linear forwards;
+}
+
+/*************/
+/* 20 circle */
+/*************/
+#php svg circle {
+  animation: fill20 2s linear forwards;
+}
+
+/**********************/
+/*  circle animations */
+/**********************/
+@keyframes fill20 {
+  100% {
+    stroke-dashoffset: 401.2;
+  }
+}
+@keyframes fill40 {
+  100% {
+    stroke-dashoffset: 306.8;
+  }
+}
+@keyframes fill50 {
+  100% {
+    stroke-dashoffset: 259.6;
+  }
+}
+@keyframes fill60 {
+  100% {
+    stroke-dashoffset: 212.4;
+  }
+}
+@keyframes fill70 {
+  100% {
+    stroke-dashoffset: 165.2;
+  }
+}
+@keyframes fill80 {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+.skill--value {
+  color: #5ac994;
+}
+
+/*# sourceMappingURL=circle.css.map */

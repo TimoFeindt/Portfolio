@@ -1,6 +1,7 @@
-$primary--light--blue: #91e3e6;
-$primary--blue: #62999b;
-$primary--dark--blue: #375456;
+$primary--light: #c0f7b7;
+$primary: #5ac994;
+$primary--dark: #124143;
+$primary--background: #141b29;
 
 * {
   margin: 0;
@@ -90,7 +91,7 @@ $primary--dark--blue: #375456;
 
 .timeline {
   grid-area: thread;
-  background-color: $primary--light--blue;
+  background-color: $primary--light;
   position: relative;
   width: 2px;
 
@@ -101,7 +102,7 @@ $primary--dark--blue: #375456;
       left: -10px;
       height: 20px;
       width: 20px;
-      border: 2px dashed $primary--light--blue;
+      border: 2px dashed $primary--light;
       border-radius: 50%;
     }
 }
@@ -112,36 +113,6 @@ $primary--dark--blue: #375456;
   border-radius: 5px;
   background-color: #f4f4f4;
   background-clip: content-box;
-
-
-}
-
-.border {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: -10px;
-    left: -2px;
-    content:"";
-    width: 15%;
-    height: 20px;
-    background-color: chartreuse;
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: -2px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: red;
-  }
-}
-
-@keyframes spinBorder {
-  100% { transform: rotateZ(360deg);}
 }
 
 .event--box {
@@ -199,7 +170,6 @@ $primary--dark--blue: #375456;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: beige;
   width: 100%;
   justify-content: space-evenly;
 }

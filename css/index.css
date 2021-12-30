@@ -8,8 +8,6 @@
   grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: auto;
   grid-template-areas: ". . nav . ." ". . . . ." ". main main main ." ". footer footer footer .";
-  background: url("../images/background.svg") center;
-  height: 100vh;
 }
 
 .navbar--container {

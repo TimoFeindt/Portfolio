@@ -1,7 +1,9 @@
 $primary--light: #c0f7b7;
 $primary: #5ac994;
 $primary--dark: #124143;
+$primary--light--background: #183136;
 $primary--background: #141b29;
+$primary--dark--background: #04090F;
 
 .skill--circle {
   position: relative;
@@ -28,9 +30,9 @@ $primary--background: #141b29;
   width: 120px;
   border-radius: 50%;
   box-shadow:
-          inset 2px 2px 4px -1px $primary--light,
-          inset -2px -2px 4px -1px $primary--background,
-          -1px -1px 0px $primary--light,
+          inset 1px 1px 6px -10px $primary--light,
+          inset -1px -1px 6px -1px $primary--background,
+          -1px -1px 1px .5px $primary--light--background,
           1px 1px 0px $primary--background,
 ;
 }
@@ -143,6 +145,11 @@ svg {
   }
 }
 
+.skill--name {
+  color: $primary;
+}
+
 .skill--value {
   color: $primary;
 }
+

@@ -19,7 +19,7 @@
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  box-shadow: inset 2px 2px 4px -1px #c0f7b7, inset -2px -2px 4px -1px #141b29, -1px -1px 0px #c0f7b7, 1px 1px 0px #141b29;
+  box-shadow: inset 1px 1px 6px -10px #c0f7b7, inset -1px -1px 6px -1px #141b29, -1px -1px 1px 0.5px #183136, 1px 1px 0px #141b29;
 }
 
 svg {
@@ -116,6 +116,10 @@ svg circle {
     stroke-dashoffset: 118;
   }
 }
+.skill--name {
+  color: #5ac994;
+}
+
 .skill--value {
   color: #5ac994;
 }

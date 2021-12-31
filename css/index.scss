@@ -16,7 +16,6 @@ $primary--background: #141b29;
   ". . nav . ."
   ". . . . ."
   ". main main main ."
-  ". footer footer footer ."
   ;
 }
 
@@ -36,10 +35,6 @@ $primary--background: #141b29;
     }
 }
 
-.navbar--container--mobil {
-  display: none;
-}
-
 .main--container {
   grid-area: main;
   display: grid;
@@ -47,11 +42,7 @@ $primary--background: #141b29;
   grid-template-rows: auto;
   grid-template-areas:
   ". img ."
-  "txt txt txt"
   "life life life"
-  ". . ."
-  "code code code"
-  "design design design"
   ;
 }
 
@@ -62,7 +53,6 @@ $primary--background: #141b29;
 }
 
 .text--box {
-  grid-area: txt;
   background-color: aquamarine;
 }
 
@@ -70,11 +60,12 @@ $primary--background: #141b29;
   grid-area: life;
   position: relative;
   margin-top: 3rem;
+
   display: grid;
   grid-template-columns: 1fr .01fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-  " . thread . "
+  ". thread . "
   "event thread ."
   ". thread event2 "
   "event3 thread ."
@@ -83,14 +74,30 @@ $primary--background: #141b29;
   ". thread event6 "
   "event7 thread . "
   ". thread event8 "
+  ". thread filler"
+  "html thread ."
+  ". thread css"
+  "js thread ."
+  ". thread react"
+  "php thread ."
+  ". thread sql"
+  "ps thread ."
+  ". thread ind"
+  "ai thread ."
+  ". thread figma"
 ;
 }
+
+/********************/
+/* start event area */
+/********************/
 
 .timeline {
   grid-area: thread;
   background-color: $primary--light;
   position: relative;
   width: 2px;
+  min-height: 10px;
 
     &:before {
       content: "";
@@ -102,6 +109,15 @@ $primary--background: #141b29;
       border: 2px dashed $primary--light;
       border-radius: 50%;
     }
+}
+
+.filler {
+  grid-area: filler;
+  position: relative;
+  color: transparent;
+  height: 10px;
+  width: 2px;
+  background-color: $primary--light;
 }
 
 .event--container {
@@ -147,6 +163,11 @@ $primary--background: #141b29;
 .event--container.eight{
   grid-area: event8;
 }
+
+/******************/
+/* end event area */
+/******************/
+
 .fa-shuttle-space {
   color: #ee4848;
   position: absolute;
@@ -155,25 +176,52 @@ $primary--background: #141b29;
   transform: rotate(90deg);
 }
 
-.codeSkillset--container {
-  grid-area: code;
+/********************/
+/* start skill area */
+/********************/
+
+
+
+.code--headline {
+  grid-area: codeHL;
 }
 
-.designSkillset--container {
-  grid-area: design ;
+.design--headline {
+  grid-area: designHL;
 }
 
-.skill--area {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+#html {
+  grid-area: html;
+}
+#css {
+  grid-area: css;
+}
+#js {
+  grid-area: js;
+}
+#react {
+  grid-area: react;
+}
+#php {
+  grid-area: php;
+}
+#sql {
+  grid-area: sql;
+}
+#ps {
+  grid-area: ps;
+}
+#ind {
+  grid-area: ind;
+}
+#ai {
+  grid-area: ai;
+}
+#figma {
+  grid-area: figma;
 }
 
-.skill--box {
-  display: flex;
-  flex-direction: column;
-  margin: .5rem;
-}
 
+/******************/
+/* end skill area */
+/******************/

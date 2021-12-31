@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: auto;
-  grid-template-areas: ". . nav . ." ". . . . ." ". main main main ." ". footer footer footer .";
+  grid-template-areas: ". . nav . ." ". . . . ." ". main main main .";
 }
 
 .navbar--container {
@@ -25,16 +25,12 @@
   padding: 0.3rem;
 }
 
-.navbar--container--mobil {
-  display: none;
-}
-
 .main--container {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: ". img ." "txt txt txt" "life life life" ". . ." "code code code" "design design design";
+  grid-template-areas: ". img ." "life life life";
 }
 
 .img--container {
@@ -44,7 +40,6 @@
 }
 
 .text--box {
-  grid-area: txt;
   background-color: aquamarine;
 }
 
@@ -55,14 +50,18 @@
   display: grid;
   grid-template-columns: 1fr 0.01fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: " . thread . " "event thread ." ". thread event2 " "event3 thread ." ". thread event4 " "event5 thread . " ". thread event6 " "event7 thread . " ". thread event8 ";
+  grid-template-areas: ". thread . " "event thread ." ". thread event2 " "event3 thread ." ". thread event4 " "event5 thread . " ". thread event6 " "event7 thread . " ". thread event8 " ". thread filler" "html thread ." ". thread css" "js thread ." ". thread react" "php thread ." ". thread sql" "ps thread ." ". thread ind" "ai thread ." ". thread figma";
 }
 
+/********************/
+/* start event area */
+/********************/
 .timeline {
   grid-area: thread;
   background-color: #c0f7b7;
   position: relative;
   width: 2px;
+  min-height: 10px;
 }
 .timeline:before {
   content: "";
@@ -73,6 +72,15 @@
   width: 20px;
   border: 2px dashed #c0f7b7;
   border-radius: 50%;
+}
+
+.filler {
+  grid-area: filler;
+  position: relative;
+  color: transparent;
+  height: 10px;
+  width: 2px;
+  background-color: #c0f7b7;
 }
 
 .event--container {
@@ -119,6 +127,9 @@
   grid-area: event8;
 }
 
+/******************/
+/* end event area */
+/******************/
 .fa-shuttle-space {
   color: #ee4848;
   position: absolute;
@@ -127,26 +138,59 @@
   transform: rotate(90deg);
 }
 
-.codeSkillset--container {
-  grid-area: code;
+/********************/
+/* start skill area */
+/********************/
+.code--headline {
+  grid-area: codeHL;
 }
 
-.designSkillset--container {
-  grid-area: design;
+.design--headline {
+  grid-area: designHL;
 }
 
-.skill--area {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+#html {
+  grid-area: html;
 }
 
-.skill--box {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem;
+#css {
+  grid-area: css;
 }
+
+#js {
+  grid-area: js;
+}
+
+#react {
+  grid-area: react;
+}
+
+#php {
+  grid-area: php;
+}
+
+#sql {
+  grid-area: sql;
+}
+
+#ps {
+  grid-area: ps;
+}
+
+#ind {
+  grid-area: ind;
+}
+
+#ai {
+  grid-area: ai;
+}
+
+#figma {
+  grid-area: figma;
+}
+
+/******************/
+/* end skill area */
+/******************/
 
 /*# sourceMappingURL=index.css.map */

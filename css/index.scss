@@ -53,6 +53,7 @@ $primary--background: #141b29;
 }
 
 .text--box {
+  grid-area: txt;
   background-color: aquamarine;
 }
 
@@ -60,31 +61,33 @@ $primary--background: #141b29;
   grid-area: life;
   position: relative;
   margin-top: 3rem;
-
   display: grid;
-  grid-template-columns: 1fr .01fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-  ". thread . "
-  "event thread ."
-  ". thread event2 "
-  "event3 thread ."
-  ". thread event4 "
-  "event5 thread . "
-  ". thread event6 "
-  "event7 thread . "
-  ". thread event8 "
-  ". thread filler"
-  "html thread ."
-  ". thread css"
-  "js thread ."
-  ". thread react"
-  "php thread ."
-  ". thread sql"
-  "ps thread ."
-  ". thread ind"
-  "ai thread ."
-  ". thread figma"
+
+  "event  ."
+  ". event2 "
+  "event3 ."
+  ". event4 "
+  "event5 . "
+  ". event6 "
+  "event7 . "
+  ". event8 "
+  ". filler"
+  "txt txt"
+  "codeHL codeHL"
+  "html ."
+  ". css"
+  "js ."
+  ". react"
+  "php ."
+  ". sql"
+  "designHL designHL"
+  "ps ."
+  ". ind"
+  "ai ."
+  ". figma"
 ;
 }
 
@@ -93,11 +96,12 @@ $primary--background: #141b29;
 /********************/
 
 .timeline {
-  grid-area: thread;
   background-color: $primary--light;
-  position: relative;
+  position: absolute;
+  left: 50%;
   width: 2px;
-  min-height: 10px;
+  min-height: 100%;
+  z-index: -1;
 
     &:before {
       content: "";
@@ -180,7 +184,9 @@ $primary--background: #141b29;
 /* start skill area */
 /********************/
 
-
+.skill--box {
+  margin: 1rem;
+}
 
 .code--headline {
   grid-area: codeHL;
@@ -188,6 +194,31 @@ $primary--background: #141b29;
 
 .design--headline {
   grid-area: designHL;
+}
+
+.design--headline,
+.code--headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary--light;
+}
+
+#html,
+#js,
+#php,
+#ps,
+#ai {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#css,
+#react,
+#sql,
+#ind,
+#figma {
+  display: flex;
 }
 
 #html {

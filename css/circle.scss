@@ -24,6 +24,7 @@ $primary--dark--background: #04090F;
 
 .inner--circle {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 120px;

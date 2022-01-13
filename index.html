@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/circle.css">
     <link rel="stylesheet" href="css/sky.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Rajdhani&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -25,65 +31,106 @@
 
         <div class="main--container">
             <div class="img--container">
-                <img src="#" alt="Profil Picture">
+                <img src="./images/Timo.png" alt="Profil Picture">
+                <div class="img--outer--circle">
+                    <div class="img--inner--circle"></div>
+                    <div class="img--inner--circle"></div>
+                    <div class="img--inner--circle"></div>
+                </div>
             </div>
             <div id="lifeline--container">
                 <div class="timeline"></div>
-                <div class="filler">filler</div>
-                <div class="rocket">
+                <div id="rocket">
                     <i class="fa-solid fa-shuttle-space"></i>
                 </div>
 
-                <div class="event--container one">
-                    <div class="border">
+                <div class="event--container" id="one">
                         <div class="event--box">
-                            Gymnasium
+                            Gymnasium Ohmoor
                         </div>
-                    </div>
+                        <div class="event--box--content">
+                            <li>Kunstabitur</li>
+                        </div>
                 </div>
-                <div class="event--container two">
+                <div class="event--container" id="two">
                     <div class="event--box">
-                        1 Ausbildung Mediengestalter Print CLX Europe Media Solution GmbH
+                        CLX Europe Media Solution GmbH
+                    </div>
+                    <div class="event--box--content">
+                        <li>Ausbildung Mediengestalter Digital und Print
+                            Fachrichtung Gestaltung und Technik</li>
+                        <li>Arbeiten mit Photoshop: Freisteller, Farbkorrektur, Retusche, kleinere Bildkompositionen </li>
+                        <li>Arbeiten mit Indesign: Aufbau und Reinzeichnung von Layouts r</li>
                     </div>
                 </div>
-                <div class="event--container three">
+                <div class="event--container" id="three">
                     <div class="event--box">
-                        Nur Hier Verkaufskraft
+                        Backerei Nur Hier GmbH
+                    </div>
+                    <div class="event--box--content">
+                        <li>Servicekraft</li>
+                        <li>Arbeitsbereich: Kundenservice, Kassenabrechnung</li>
                     </div>
                 </div>
-                <div class="event--container four">
+                <div class="event--container" id="four">
                     <div class="event--box">
-                        Praktium Marketing BoD
+                        Praktium Marketing Books on Demand
+                    </div>
+                    <div class="event--box--content">
+                        <li>Praktikum im Marketing </li>
+                        <li>Arbeiten mit Figma: Layoutgestaltung, Prototyping</li>
+                        <li>Assistenz bei Eventplanung und Social Media Arbeit,
+                            Erstellung von Marketingunterlagen</li>
                     </div>
                 </div>
-                <div class="event--container five">
+                <div class="event--container" id="five">
                     <div class="event--box">
                         Weiterbildung
                     </div>
-                </div>
-                <div class="event--container six">
-                    <div class="event--box">
-                        Start up Webdesigner
+                    <div class="event--box--content">
+                        <li>Photoshop Kurs</li>
+                        <li>HTML & CSS Kurs</li>
+                        <li>Javascript</li>
                     </div>
                 </div>
-                <div class="event--container seven">
+                <div class="event--container" id="six">
                     <div class="event--box">
-                        2. Ausbildung Fachinformatiker Anwendungsentwicklung
+                        Smartes Webdesign GbR
+                    </div>
+                    <div class="event--box--content">
+                        <li>Webdesigner in einem Startup</li>
+                        <li>Erstellen von Webseiten auf Template Grundlage</li>
+                        <li>Logo Design und Werbekonzepte von Kunden</li>
                     </div>
                 </div>
-                <div class="event--container eight">
+                <div class="event--container" id="seven">
                     <div class="event--box">
-                       Bei Ihnen?!
+                        rexx Systems GmbH
+                    </div>
+                    <div class="event--box--content">
+                        <li>Ausbildung Fachinformatiker Anwendungsentwicklung</li>
+                        <li>Gestalten von Kundenportalen nach Vorlage mit HTML und CSS </li>
+                        <li>Pflegen von Datenbanken</li>
+                        <li>Livegang von Kundenportalen begleiten</li>
+                        <li>Arbeiten mit Docker & Git</li>
+                    </div>
+                </div>
+                <div class="event--container" id="eight">
+                    <div class="event--box">
+                       Bei Euch?!
+                    </div>
+                    <div class="event--box--content">
+                        <li>Als Webdesigner oder Frontend Developer</li>
                     </div>
                 </div>
 
                 <div class="text--box">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque cum cumque eius excepturi harum illum ipsa iste itaque labore laborum laudantium maxime molestias nemo non nulla, optio pariatur porro quas quasi quibusdam quis sunt suscipit tempora temporibus veritatis voluptatibus! Beatae obcaecati quae saepe!
                 </div>
-
-
+            </div>
+            <div id="skill--container">
                 <div class="code--headline">Coding Skills</div>
-
+                <div class="design--headline">Design Skills</div>
                 <div class="skill--box" id="html">
                     <div class="skill--circle">
                         <div class="outer--circle">
@@ -228,8 +275,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="design--headline">Design Skills</div>
                 <div class="skill--box" id="ps">
 
                     <div class="skill--circle">
@@ -331,11 +376,47 @@
                     </div>
                 </div>
             </div>
+            <div id="sample--container">
+                Arbeitsproben
+                <div style="height: 200px; width:200px;">
+                    ArbeitsProben #1
+                </div>
+                <div style="height: 200px; width:200px;">
+                    ArbeitsProben #2
+                </div>
+                <div style="height: 200px; width:200px;">
+                    ArbeitsProben #3
+                </div>
+                <div style="height: 200px; width:200px;">
+                    ArbeitsProben #4
+                </div>
+                <div style="height: 200px; width:200px;">
+                    ArbeitsProben #5
+
+                    <div id="clac--container">
+                        <div id="calc--box">
+                            <div id="calc--num--fiel">
+                                <div class="clac--num" id="c1">1</div>
+                                <div class="clac--num" id="c2">2</div>
+                                <div class="clac--num" id="c3">3</div>
+                                <div class="clac--num" id="c4">4</div>
+                                <div class="clac--num" id="c5">5</div>
+                                <div class="clac--num" id="c6">6</div>
+                                <div class="clac--num" id="c7">7</div>
+                                <div class="clac--num" id="c8">8</div>
+                                <div class="clac--num" id="c9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- start script area -->
     <script src="./js/circle.js"></script>
+    <script src="./js/rocket.js"></script>
+    <scrip src="./js/calculator.js"></scrip>
     <!-- end script area -->
 </body>
 

@@ -9,6 +9,9 @@
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background3.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +77,12 @@
       <workItem from="1641115118463" duration="1190000" />
       <workItem from="1641670751874" duration="661000" />
       <workItem from="1641726745784" duration="2776000" />
-      <workItem from="1641750788337" duration="2862000" />
+      <workItem from="1641750788337" duration="3236000" />
+      <workItem from="1641797466451" duration="24669000" />
+      <workItem from="1641884295938" duration="4898000" />
+      <workItem from="1641972566385" duration="13259000" />
+      <workItem from="1642010077260" duration="3618000" />
+      <workItem from="1642059120739" duration="18325000" />
     </task>
     <servers />
   </component>
@@ -82,6 +90,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="721" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1642070268591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1642070268591" />
     <state x="228" y="258" key="EditFileWatcherDialog" timestamp="1639742702006">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -188,5 +200,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1640820459186" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641823171942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1641823171942" />
   </component>
 </project>

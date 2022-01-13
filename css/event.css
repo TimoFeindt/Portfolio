@@ -1,0 +1,61 @@
+/**********/
+/* colors */
+/**********/
+/*************************/
+/* border spin animation */
+/*************************/
+.event--container {
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.event--box {
+  background-color: #1694BA;
+  border-radius: 0.3rem;
+  border: solid 2px #1CBCEE;
+  padding: 0.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.event--box--content {
+  overflow: hidden;
+  height: 0;
+}
+.event--box--content li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.event--box--content li::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: "\f7a2";
+  display: inline-block;
+  margin: 0.3rem 0.5rem;
+  animation: spinWorld 4s linear infinite;
+}
+
+.active .event--box--content {
+  z-index: -1;
+  padding-top: 10px;
+  background-color: rgba(28, 188, 238, 0.3);
+  border: solid 2px #1CBCEE;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 95%;
+  margin: -5px auto 0;
+  border-radius: 0.3rem;
+  color: #E2E2E2;
+  font-family: "Rajdhani", sans-serif;
+  animation: showContent 2s linear forwards;
+}
+
+@keyframes showContent {
+  100% {
+    height: 75%;
+  }
+}
+
+/*# sourceMappingURL=event.css.map */

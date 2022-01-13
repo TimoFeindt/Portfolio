@@ -1,9 +1,18 @@
-$primary--light: #c0f7b7;
-$primary: #5ac994;
-$primary--dark: #124143;
-$primary--light--background: #183136;
+/**********/
+/* colors */
+/**********/
+
+$primary--light: #1CBCEE;
+$primary--Light--trans: rgba(28,188,238,.3);
+$primary: #1694BA;
+$primary--light--background: #0E2F39;
 $primary--background: #141b29;
 $primary--dark--background: #04090F;
+
+$font--light: #E2E2E2;
+$font--headline: 'Open Sans Condensed', sans-serif;
+$font--text: 'Rajdhani', sans-serif;
+
 
 .skill--circle {
   position: relative;

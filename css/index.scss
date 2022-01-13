@@ -1,11 +1,23 @@
-$primary--light: #c0f7b7;
-$primary: #5ac994;
-$primary--dark: #124143;
+/**********/
+/* colors */
+/**********/
+
+$primary--light: #1CBCEE;
+$primary--Light--trans: rgba(28,188,238,.3);
+$primary: #1694BA;
+$primary--light--background: #0E2F39;
 $primary--background: #141b29;
+$primary--dark--background: #04090F;
+
+$font--light: #E2E2E2;
+$font--headline: 'Open Sans Condensed', sans-serif;
+$font--text: 'Rajdhani', sans-serif;
+
 
 * {
   margin: 0;
   padding: 0;
+  font-family: $font--text;
 }
 
 #grid--container {
@@ -23,14 +35,18 @@ $primary--background: #141b29;
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  margin-bottom: 3rem;
-  background-color: yellowgreen;
+  justify-content: center;
+  margin: 3rem 0;
   width: 100%;
 
     li {
       list-style-type: none;
+
         a {
+          color: $primary--light;
+          font-family: $font--headline;
           padding: .3rem;
+          text-decoration: none;
         }
     }
 }
@@ -43,18 +59,45 @@ $primary--background: #141b29;
   grid-template-areas:
   ". img ."
   "life life life"
+  "skill skill skill"
+  "sample sample sample"
   ;
 }
 
 .img--container {
   grid-area: img;
-  background-color: red;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.img--container img{
+  width: 50%;
+  border-radius: .3rem;
+}
+
+.img--outer--circle::before {
+  content: '';
+  border-left: 5px solid blue;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
 }
 
 .text--box {
   grid-area: txt;
-  background-color: aquamarine;
+  background-color: $primary;
+  border: 2px solid $primary--light;
+  border-radius: .3rem;
+  display: flex;
+  margin: 4rem ;
+  padding: 1rem;
 }
 
 #lifeline--container {
@@ -64,6 +107,8 @@ $primary--background: #141b29;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  grid-row-gap: .3rem;
+  grid-column-gap: 1rem;
   grid-template-areas:
 
   "event  ."
@@ -74,26 +119,47 @@ $primary--background: #141b29;
   ". event6 "
   "event7 . "
   ". event8 "
-  ". filler"
   "txt txt"
-  "codeHL codeHL"
-  "html ."
-  ". css"
-  "js ."
-  ". react"
-  "php ."
-  ". sql"
-  "designHL designHL"
-  "ps ."
-  ". ind"
-  "ai ."
-  ". figma"
+
 ;
 }
 
-/********************/
-/* start event area */
-/********************/
+#skill--container {
+  grid-area: skill;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "codeHL codeHL designHL designHL"
+  "html css ps ind"
+  "js react ai figma"
+  "php sql . ."
+  ;
+}
+
+/**********/
+/* rocket */
+/**********/
+
+.fa-shuttle-space {
+  color: #ee4848;
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 8px);
+  transform: rotate(90deg);
+  z-index: -1;
+
+  /*&::before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -2;
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+
+  }*/
+}
 
 .timeline {
   background-color: $primary--light;
@@ -101,91 +167,64 @@ $primary--background: #141b29;
   left: 50%;
   width: 2px;
   min-height: 100%;
-  z-index: -1;
+  z-index: -10;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: -21px;
-      left: -10px;
-      height: 20px;
-      width: 20px;
-      border: 2px dashed $primary--light;
-      border-radius: 50%;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -11px;
+    height: 20px;
+    width: 20px;
+    border: 2px dashed $primary--light;
+    border-radius: 50%;
+  }
 }
 
-.filler {
-  grid-area: filler;
-  position: relative;
-  color: transparent;
-  height: 10px;
-  width: 2px;
-  background-color: $primary--light;
-}
+/**************/
+/* event area */
+/**************/
 
-.event--container {
-  margin: .5rem;
-  border: 2px dashed palevioletred;
-  border-radius: 5px;
-  background-color: #f4f4f4;
-  background-clip: content-box;
-}
-
-.event--box {
-  padding: .5rem;
-}
-
-.event--container.one {
+.event--container#one {
   grid-area: event;
 }
 
-.event--container.two{
+.event--container#two{
   grid-area: event2;
 }
 
-.event--container.three{
+.event--container#three{
   grid-area: event3;
 }
 
-.event--container.four{
+.event--container#four{
   grid-area: event4;
 }
 
-.event--container.five{
+.event--container#five{
   grid-area: event5;
 }
 
-.event--container.six{
+.event--container#six{
   grid-area: event6;
 }
 
-.event--container.seven{
+.event--container#seven{
   grid-area: event7;
 }
 
-.event--container.eight{
+.event--container#eight{
   grid-area: event8;
 }
 
-/******************/
-/* end event area */
-/******************/
-
-.fa-shuttle-space {
-  color: #ee4848;
-  position: absolute;
-  top: -16px;
-  left: calc(50% - 12px);
-  transform: rotate(90deg);
-}
-
-/********************/
-/* start skill area */
-/********************/
+/**************/
+/* skill area */
+/**************/
 
 .skill--box {
   margin: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .code--headline {
@@ -201,24 +240,8 @@ $primary--background: #141b29;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $primary--light;
-}
-
-#html,
-#js,
-#php,
-#ps,
-#ai {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#css,
-#react,
-#sql,
-#ind,
-#figma {
-  display: flex;
+  color: $font--light;
+  font-size: 2rem;
 }
 
 #html {
@@ -252,7 +275,11 @@ $primary--background: #141b29;
   grid-area: figma;
 }
 
+/*************/
+/* work area */
+/*************/
 
-/******************/
-/* end skill area */
-/******************/
+#sample--container {
+  grid-area: sample;
+}
+

@@ -21,11 +21,14 @@
         <div id="star2"></div>
         <div id="star3"></div>
     </div>
+
+    <h1>Lebenslauf</h1>
+
     <div id="grid--container">
         <div class="navbar--container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="#">Lebenslauf</a></li>
+            <li><a href="#lifeline--container">Meilensteine</a></li>
+            <li><a href="#skill--container">Skills</a></li>
+            <li><a href="#sample--container">Arbeitsproben</a></li>
         </div>
 
         <div class="main--container">
@@ -389,21 +392,34 @@
                 <div style="height: 200px; width:200px;">
                     ArbeitsProben #4
                 </div>
-                <div style="height: 200px; width:200px;">
+                <div style="height: 200px;">
                     ArbeitsProben #5
 
-                    <div id="clac--container">
+                    <div id="calc--container">
                         <div id="calc--box">
-                            <div id="calc--num--fiel">
-                                <div class="clac--num" id="c1">1</div>
-                                <div class="clac--num" id="c2">2</div>
-                                <div class="clac--num" id="c3">3</div>
-                                <div class="clac--num" id="c4">4</div>
-                                <div class="clac--num" id="c5">5</div>
-                                <div class="clac--num" id="c6">6</div>
-                                <div class="clac--num" id="c7">7</div>
-                                <div class="clac--num" id="c8">8</div>
-                                <div class="clac--num" id="c9">9</div>
+                            <div id="result--box">
+                                Ergebnis
+                            </div>
+                            <div id="calc--num--field">
+                                <div class="calc--num">1</div>
+                                <div class="calc--num">2</div>
+                                <div class="calc--num">3</div>
+                                <div class="calc--num">4</div>
+                                <div class="calc--num">5</div>
+                                <div class="calc--num">6</div>
+                                <div class="calc--num">7</div>
+                                <div class="calc--num">8</div>
+                                <div class="calc--num">9</div>
+                                <div class="calc--num">,</div>
+                                <div class="calc--num">0</div>
+                                <div class="calc--num" id="cleaAll">AC</div>
+                            </div>
+                            <div id="calc--operator--field">
+                                <div class="calc--operator">+</div>
+                                <div class="calc--operator">-</div>
+                                <div class="calc--operator">*</div>
+                                <div class="calc--operator">/</div>
+                                <div class="calc--operator">=</div>
                             </div>
                         </div>
                     </div>
@@ -415,7 +431,7 @@
     <!-- start script area -->
     <script src="./js/circle.js"></script>
     <script src="./js/rocket.js"></script>
-    <scrip src="./js/calculator.js"></scrip>
+    <script src="./js/calc.js"></script>
     <!-- end script area -->
 </body>
 

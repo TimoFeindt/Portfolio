@@ -20,11 +20,9 @@ window.addEventListener("scroll" , ()=> {
 
     if(rocket.offsetTop < 2330) {
         rocket.style.top = (startPosition+ scrolled) + 'px';
-
     } else {
         rocket.style.top = 2330 + 'px';
     }
-
     if(rocket.offsetTop >= (containerEight.offsetTop+ 21)) {
         containerEight.classList.add('active');
     }else if(rocket.offsetTop >= (containerSeven.offsetTop+ 21)) {

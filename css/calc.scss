@@ -21,15 +21,26 @@ $font--text: 'Rajdhani', sans-serif;
   flex-wrap: wrap;
 }
 
-#result--box {
+#result--box, #clearAll {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   padding: 5px;
   border: 2px solid $primary--light;
   box-sizing: border-box;
   color: $font--light;
   border-radius: 5px;
+}
+
+#clearAll {
+  flex-direction: row;
+}
+
+#preResult, #result {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 25px;
 }
 
 #calc--num--field {

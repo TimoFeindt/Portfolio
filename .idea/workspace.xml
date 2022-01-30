@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e95a2e8a-c80d-4c3f-9f51-4675679af12a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/calc.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calc.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/calc.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/calc.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/calc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/calc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/circle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/circle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/event.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/event.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sky.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sky.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/work.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/work.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/rocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calc.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +82,7 @@
       <workItem from="1642010077260" duration="3618000" />
       <workItem from="1642059120739" duration="20041000" />
       <workItem from="1642155561499" duration="14074000" />
+      <workItem from="1643456517688" duration="537000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/sky.css">
     <link rel="stylesheet" href="css/event.css">
     <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/accordion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Rajdhani&display=swap" rel="stylesheet">
@@ -378,11 +380,40 @@
                     </div>
                 </div>
             </div>
+
             <div id="sample--container">
                 Arbeitsproben
-                <div style="height: 200px; width:200px;">
-                    ArbeitsProben #1
+
+                <div class="work--sample">
+                    <h2>Akkordion</h2>
+                    <div class="accordion--frame">
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quaquasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quaquasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quaquasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                        <div class="accordion--body">
+                            <div class="accordion--header">Test</div>
+                            <div class="accordion--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim hic minima natus quasi, quo. </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <div style="height: 200px; width:200px;">
                     ArbeitsProben #2
                 </div>
@@ -398,28 +429,30 @@
                     <div id="calc--container">
                         <div id="calc--box">
                             <div id="result--box">
-                                Ergebnis
+                                <div id="preResult">Rechenweg</div>
+                                <div id="result">Ergebnis</div>
                             </div>
+                            <div id="clearAll">Clear All</div>
                             <div id="calc--num--field">
-                                <div class="calc--num">1</div>
-                                <div class="calc--num">2</div>
-                                <div class="calc--num">3</div>
-                                <div class="calc--num">4</div>
-                                <div class="calc--num">5</div>
-                                <div class="calc--num">6</div>
-                                <div class="calc--num">7</div>
-                                <div class="calc--num">8</div>
-                                <div class="calc--num">9</div>
-                                <div class="calc--num">,</div>
-                                <div class="calc--num">0</div>
-                                <div class="calc--num" id="cleaAll">AC</div>
+                                <div class="calc--num data-num">1</div>
+                                <div class="calc--num data-num">2</div>
+                                <div class="calc--num data-num">3</div>
+                                <div class="calc--num data-num">4</div>
+                                <div class="calc--num data-num">5</div>
+                                <div class="calc--num data-num">6</div>
+                                <div class="calc--num data-num">7</div>
+                                <div class="calc--num data-num">8</div>
+                                <div class="calc--num data-num">9</div>
+                                <div class="calc--num data-num">,</div>
+                                <div class="calc--num data-num">0</div>
+                                <div id="data-clear" class="calc--num"><i class="fa-solid fa-arrow-left"></i></div>
                             </div>
                             <div id="calc--operator--field">
-                                <div class="calc--operator">+</div>
-                                <div class="calc--operator">-</div>
-                                <div class="calc--operator">*</div>
-                                <div class="calc--operator">/</div>
-                                <div class="calc--operator">=</div>
+                                <div class="calc--operator data-operator">+</div>
+                                <div class="calc--operator data-operator">-</div>
+                                <div class="calc--operator data-operator">*</div>
+                                <div class="calc--operator data-operator">/</div>
+                                <div class="calc--operator data-equal">=</div>
                             </div>
                         </div>
                     </div>
@@ -432,6 +465,7 @@
     <script src="./js/circle.js"></script>
     <script src="./js/rocket.js"></script>
     <script src="./js/calc.js"></script>
+    <script src="./js/accordion.js"></script>
     <!-- end script area -->
 </body>
 

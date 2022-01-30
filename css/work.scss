@@ -1,0 +1,26 @@
+/**********/
+/* colors */
+/**********/
+
+
+$primary--light: #1CBCEE;
+$primary--Light--trans: rgba(28,188,238,.3);
+$primary: #1694BA;
+$primary--light--background: #0E2F39;
+$primary--background: #141b29;
+$primary--dark--background: #04090F;
+
+$font--light: #E2E2E2;
+$font--headline: 'Open Sans Condensed', sans-serif;
+$font--text: 'Rajdhani', sans-serif;
+
+
+#sample--container {
+    
+}
+
+
+.work--sample h2{
+    font-family: $font--headline;
+    color: $font--light;
+}

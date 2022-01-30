@@ -8,15 +8,26 @@
   flex-wrap: wrap;
 }
 
-#result--box {
+#result--box, #clearAll {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   padding: 5px;
   border: 2px solid #1CBCEE;
   box-sizing: border-box;
   color: #E2E2E2;
   border-radius: 5px;
+}
+
+#clearAll {
+  flex-direction: row;
+}
+
+#preResult, #result {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 25px;
 }
 
 #calc--num--field {
@@ -25,6 +36,7 @@
   padding: 5px;
   width: 60%;
 }
+
 #calc--num--field .calc--num {
   display: flex;
   justify-content: center;
@@ -42,6 +54,7 @@
   padding: 5px;
   width: 30%;
 }
+
 #calc--operator--field .calc--operator {
   width: 30px;
   padding: 10px;
@@ -53,8 +66,7 @@
   justify-content: center;
   align-items: center;
 }
+
 #calc--operator--field .calc--operator:last-child {
   width: 100%;
 }
-
-/*# sourceMappingURL=calc.css.map */

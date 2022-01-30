@@ -8,15 +8,22 @@
 }
 
 #grid--container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". . nav . ." ". . . . ." ". main main main .";
+  -ms-grid-columns: .5fr 1fr 1fr 1fr .5fr;
+      grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". . nav . ." ". . . . ." ". main main main .";
 }
 
 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 2rem 0;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 4rem;
@@ -24,46 +31,69 @@ h1 {
 }
 
 .navbar--container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3rem 0;
   width: 100%;
 }
+
 .navbar--container li {
   list-style-type: none;
 }
+
 .navbar--container li a {
   color: #1CBCEE;
   font-family: "Open Sans Condensed", sans-serif;
-  padding: 0.3rem;
+  padding: .3rem;
   text-decoration: none;
 }
 
 .main--container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-area: main;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". img ." "life life life" "skill skill skill" "sample sample sample";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". img ." "life life life" "skill skill skill" "sample sample sample";
 }
 
 .img--container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 .img--container img {
   width: 50%;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
 }
 
 .img--outer--circle::before {
-  content: "";
+  content: '';
   border-left: 5px solid blue;
   border-right: 5px solid transparent;
   border-top: 5px solid blue;
@@ -77,33 +107,50 @@ h1 {
 }
 
 .text--box {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: txt;
   background-color: #1694BA;
   border: 2px solid #1CBCEE;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 4rem;
   padding: 1rem;
 }
 
 #lifeline--container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: life;
   position: relative;
   margin-top: 3rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-row-gap: 0.3rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-row-gap: .3rem;
   grid-column-gap: 1rem;
-  grid-template-areas: "event  ." ". event2 " "event3 ." ". event4 " "event5 . " ". event6 " "event7 . " ". event8 " "txt txt";
+      grid-template-areas: "event  ." ". event2 " "event3 ." ". event4 " "event5 . " ". event6 " "event7 . " ". event8 " "txt txt";
 }
 
 #skill--container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: skill;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "codeHL codeHL designHL designHL" "html css ps ind" "js react ai figma" "php sql . .";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "codeHL codeHL designHL designHL" "html css ps ind" "js react ai figma" "php sql . .";
 }
 
 /**********/
@@ -114,7 +161,8 @@ h1 {
   position: absolute;
   top: -16px;
   left: calc(50% - 8px);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   z-index: -1;
   /*&::before {
     position: absolute;
@@ -136,6 +184,7 @@ h1 {
   min-height: 100%;
   z-index: -10;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -151,34 +200,50 @@ h1 {
 /* event area */
 /**************/
 .event--container#one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: event;
 }
 
 .event--container#two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: event2;
 }
 
 .event--container#three {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: event3;
 }
 
 .event--container#four {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: event4;
 }
 
 .event--container#five {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: event5;
 }
 
 .event--container#six {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: event6;
 }
 
 .event--container#seven {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   grid-area: event7;
 }
 
 .event--container#eight {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
   grid-area: event8;
 }
 
@@ -187,64 +252,100 @@ h1 {
 /**************/
 .skill--box {
   margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .code--headline {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: codeHL;
 }
 
 .design--headline {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: designHL;
 }
 
 .design--headline,
 .code--headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #E2E2E2;
   font-size: 2rem;
 }
 
 #html {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: html;
 }
 
 #css {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: css;
 }
 
 #js {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: js;
 }
 
 #react {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: react;
 }
 
 #php {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: php;
 }
 
 #sql {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: sql;
 }
 
 #ps {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: ps;
 }
 
 #ind {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: ind;
 }
 
 #ai {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: ai;
 }
 
 #figma {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
   grid-area: figma;
 }
 
@@ -252,7 +353,9 @@ h1 {
 /* work area */
 /*************/
 #sample--container {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: sample;
 }
-
 /*# sourceMappingURL=index.css.map */

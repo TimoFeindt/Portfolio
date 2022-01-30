@@ -1,0 +1,35 @@
+/**********/
+/* colors */
+/**********/
+.accordion--body {
+  margin: 1rem 0;
+}
+
+.accordion--body .accordion--header {
+  background-color: #1694BA;
+  border: solid 2px #1CBCEE;
+  border-radius: .3rem;
+  padding-left: 1rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #E2E2E2;
+}
+
+.accordion--body .accordion--text {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion--header.active + .accordion--text {
+  background-color: rgba(28, 188, 238, 0.3);
+  border-left: solid 2px #1CBCEE;
+  border-right: solid 2px #1CBCEE;
+  border-bottom: solid 2px #1CBCEE;
+  border-top: none;
+  border-radius: 0 0 .3rem .3rem;
+  width: 97%;
+  margin: 0 auto;
+  padding: .5rem;
+  font-family: "Rajdhani", sans-serif;
+  color: #E2E2E2;
+  transition: max-height 2s;
+}

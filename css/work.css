@@ -1,3 +1,7 @@
-
-
-/*# sourceMappingURL=work.css.map */
+/**********/
+/* colors */
+/**********/
+.work--sample h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #E2E2E2;
+}

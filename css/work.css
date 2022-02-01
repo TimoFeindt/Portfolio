@@ -1,7 +1,9 @@
 /**********/
 /* colors */
 /**********/
-.work--sample h2 {
+#sample--container h2 {
+  margin: .3rem;
   font-family: "Open Sans Condensed", sans-serif;
   color: #E2E2E2;
 }
+/*# sourceMappingURL=work.css.map */

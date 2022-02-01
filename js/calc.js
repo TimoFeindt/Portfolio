@@ -1,17 +1,31 @@
 var numbers = document.querySelectorAll('.data-num');
-var operator = document.querySelectorAll('[data-operator]');
+var operators = document.querySelectorAll('.data-operator');
 var clearer = document.getElementById('data-clear');
 var preResult = document.getElementById('preResult');
 var result = document.getElementById('result')
 var allClear = document.getElementById('clearAll');
+var equal = document.getElementById('data-equal');
 
 calc = (e) => {
-    console.log(e.target.innerHTML);
     preResult.innerHTML += e.target.innerHTML;
 };
 
-clear = () => {
-    console.log('test');
+addOp = (e) => {
+    preResult.innerHTML += e.target.innerHTML;
+}
+
+evaluate = () => {
+    
+    let firstNum = preResult.innerHTML.substring(0,1);
+    if(firstNum === "*"|| firstNum === "/") {
+        result.innerHTML = "Error!"
+    }else {
+        result.innerHTML = eval(preResult.innerHTML)
+    }
+    
+};
+
+fullClear = () => {
     preResult.innerHTML = "";
 };
 
@@ -21,9 +35,14 @@ clearLastDigit = () => {
 
 numbers.forEach(num => {
     num.addEventListener("click", calc);
-
 });
 
-allClear.onclick = clear;
+operators.forEach(op => {
+    op.addEventListener("click", addOp);
+});
+
+allClear.onclick = fullClear;
 
 clearer.onclick = clearLastDigit;
+
+equal.onclick = evaluate;

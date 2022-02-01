@@ -15,12 +15,8 @@ $font--headline: 'Open Sans Condensed', sans-serif;
 $font--text: 'Rajdhani', sans-serif;
 
 
-#sample--container {
-    
-}
-
-
-.work--sample h2{
+#sample--container h2{
+    margin: .3rem;
     font-family: $font--headline;
     color: $font--light;
 }

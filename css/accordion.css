@@ -31,5 +31,7 @@
   padding: .5rem;
   font-family: "Rajdhani", sans-serif;
   color: #E2E2E2;
+  -webkit-transition: max-height 2s;
   transition: max-height 2s;
 }
+/*# sourceMappingURL=accordion.css.map */

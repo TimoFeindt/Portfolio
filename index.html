@@ -381,10 +381,32 @@
                 </div>
             </div>
 
+            
+
             <div id="sample--container">
                 Arbeitsproben
 
+                <div >
+                    <div id="main_frame">
+                        <div>
+                            <i class="fa fa-arrow-circle-left" id="left" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-circle-right" id="right" aria-hidden="true" ></i>
+                        </div>
+                        <div id="active">
+                            <img src="../images/greenSmoothie_1.jpg" alt="Bild1">
+                        </div>
+                        <div id="imgBlock">
+                            <img class="imageSmall" src="../images/greenSmoothie_1.jpg" alt="bild1" >
+                            <img class="imageSmall" src="../images/iceTea_2.jpg" alt="bild2" >
+                            <img class="imageSmall" src="../images/cocktail_3.jpg" alt="bild3" >
+                        </div>
+                    </div>
+                
+                </div>
+
                 <div class="work--sample">
+
+                    
                     <h2>Akkordion</h2>
                     <div class="accordion--frame">
                         <div class="accordion--body">
@@ -414,25 +436,16 @@
                     </div>
                 </div>
                 
-                <div style="height: 200px; width:200px;">
-                    ArbeitsProben #2
-                </div>
-                <div style="height: 200px; width:200px;">
-                    ArbeitsProben #3
-                </div>
-                <div style="height: 200px; width:200px;">
-                    ArbeitsProben #4
-                </div>
-                <div style="height: 200px;">
-                    ArbeitsProben #5
+                <div>
+                    <h2>Taschenrechner</h2>
 
                     <div id="calc--container">
                         <div id="calc--box">
                             <div id="result--box">
-                                <div id="preResult">Rechenweg</div>
-                                <div id="result">Ergebnis</div>
+                                <div id="preResult"></div>
+                                <div id="result">0</div>
                             </div>
-                            <div id="clearAll">Clear All</div>
+                            <div id="clearAll">Clear</div>
                             <div id="calc--num--field">
                                 <div class="calc--num data-num">1</div>
                                 <div class="calc--num data-num">2</div>
@@ -443,16 +456,18 @@
                                 <div class="calc--num data-num">7</div>
                                 <div class="calc--num data-num">8</div>
                                 <div class="calc--num data-num">9</div>
-                                <div class="calc--num data-num">,</div>
+                                <div class="calc--num data-num">.</div>
                                 <div class="calc--num data-num">0</div>
                                 <div id="data-clear" class="calc--num"><i class="fa-solid fa-arrow-left"></i></div>
                             </div>
                             <div id="calc--operator--field">
+                                <div class="calc--operator data-num">(</div>
+                                <div class="calc--operator data-num">)</div>
                                 <div class="calc--operator data-operator">+</div>
                                 <div class="calc--operator data-operator">-</div>
                                 <div class="calc--operator data-operator">*</div>
                                 <div class="calc--operator data-operator">/</div>
-                                <div class="calc--operator data-equal">=</div>
+                                <div id="data-equal" class="calc--operator">=</div>
                             </div>
                         </div>
                     </div>
@@ -462,6 +477,7 @@
     </div>
 
     <!-- start script area -->
+    <script src="./js/imageSlider.js"></script>
     <script src="./js/circle.js"></script>
     <script src="./js/rocket.js"></script>
     <script src="./js/calc.js"></script>

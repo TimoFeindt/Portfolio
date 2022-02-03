@@ -1,31 +1,36 @@
 
 let index = 0;
-let imgArray = document.getElementById('imgBlock');
+let imgArray = Array.from(document.querySelectorAll('.imageSmall'));
+let rightBtn = document.getElementById('right');
+let leftBtn = document.getElementById('left');
 
-console.log(imgArray)
-/*const nextImage = () => {
-
+console.log(imgArray[2])
+const nextImage = () => {
+    let activeImage = document.getElementById('#active') 
     if(index == (imgArray.length - 1)) {
         index = 0;
-        $('#active').html(imgArray[0].outerHTML);
-
+        activeImage.innerHTML = imgArray[0].outerHTML;
+        console.log(index)
     } else if(index < imgArray.length) {
         index += 1
-        $('#active').html(imgArray[index].outerHTML)
+        activeImage.innerHTML = imgArray[index].outerHTML;
+        console.log(index)
     }
 }
 const prevImage = () => {
-
+    let activeImage = document.getElementById('#active') 
     if(index == 0) {
         index = (imgArray.length - 1);
-        $('#active').html(imgArray[index].outerHTML)
+        activeImage.innerHTML = imgArray[index].outerHTML;
+        console.log(index)
     }else if(index <= imgArray.length){
         index += -1
-        $('#active').html(imgArray[index].outerHTML)
+        activeImage.innerHTML = imgArray[index].outerHTML;
+        console.log(index)
     }
 
 }
 
 
-$('#right').click(nextImage);
-$('#left').click(prevImage); */
+rightBtn.onclick = nextImage;
+leftBtn.onclick = prevImage; 

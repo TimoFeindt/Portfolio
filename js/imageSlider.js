@@ -22,9 +22,7 @@ const prevImage = () => {
         index += -1
         activeImage.innerHTML = imgArray[index].outerHTML;
     }
-
 }
-
 
 rightBtn.onclick = nextImage;
 leftBtn.onclick = prevImage; 

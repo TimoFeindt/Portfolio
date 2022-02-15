@@ -15,8 +15,51 @@ $font--headline: 'Open Sans Condensed', sans-serif;
 $font--text: 'Rajdhani', sans-serif;
 
 
-#sample--container h2{
-    margin: .3rem;
+#sample--container{
+    display:flex;
+    flex-wrap: wrap;
+    h2 {
+        margin: .3rem;
     font-family: $font--headline;
     color: $font--light;
+    }
+
+}
+
+.work--sample {
+    margin: 1rem;
+}
+
+/****************/
+/* Image Slider */
+/****************/
+
+#image--active img {
+    width: 50vw;
+}
+
+#imgBlock {
+    display: none;
+}
+
+#image--frame {
+    display: flex;
+    position: relative;
+}
+
+#image--btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #left {
+        color: #fff;
+        position: absolute;
+        left: 0;
+    }
+
+    #right {
+        color: #fff;
+        position: absolute;
+        right: 0;
+    }
 }
